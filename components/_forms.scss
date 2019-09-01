@@ -1,0 +1,86 @@
+/* Inputs
+-------------------------------------------------- */
+.woocommerce {
+  .form-row > label:not(.woocommerce-form__label-for-checkbox) {
+    color: $text-muted;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+    margin-bottom: 0;
+  }
+
+  select,
+  .qty,
+  .input-text {
+    @extend .form-control;
+  }
+
+  .qty {
+    width: 4.5em;
+  }
+
+  .woocommerce-form__label {
+    @extend .custom-control;
+    @extend .custom-checkbox;
+
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+    font-weight: $font-weight-normal;
+
+    span:not(.required) {
+      @extend .custom-control-label;
+
+      &::before,
+      &::after {
+        top: 1px;
+      }
+    }
+
+    input[type="checkbox"] {
+      @extend .custom-control-input;
+    }
+  }
+
+  /* Validation
+  -------------------------------------------------- */
+  form {
+    .required {
+      color: $danger;
+    }
+  }
+
+  .woocommerce-invalid {
+    label.checkbox {
+      color: $danger;
+    }
+
+    input {
+      border-bottom-color: $danger;
+    }
+  }
+
+  .woocommerce-validated {
+    label.checkbox {
+      font-weight: $font-weight-bold;
+    }
+
+    input {
+      border-bottom-color: $success;
+    }
+  }
+}
+
+/* Checkout forms
+-------------------------------------------------- */
+.woocommerce-address-fields__field-wrapper,
+.woocommerce-billing-fields__field-wrapper,
+.woocommerce-shipping-fields__field-wrapper,
+.woocommerce-additional-fields__field-wrapper {
+  margin-bottom: 1.5rem;
+
+  // Clearfix
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}

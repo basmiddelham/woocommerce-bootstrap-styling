@@ -1,0 +1,32 @@
+/* Woocommerce tabs
+-------------------------------------------------------------- */
+.woocommerce-tabs {
+  .shop_attributes {
+    @extend .table;
+    @extend .table-sm;
+    @extend .table-borderless;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  ul.tabs {
+    @extend .nav;
+    @extend .nav-tabs;
+
+    margin-bottom: 1rem;
+
+    li {
+      @extend .nav-item;
+
+      a {
+        @extend .nav-link;
+      }
+
+      &.active a {
+        @extend .active;
+      }
+    }
+  }
+}

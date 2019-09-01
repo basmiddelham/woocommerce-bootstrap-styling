@@ -1,0 +1,146 @@
+/* Product grid
+-------------------------------------------------- */
+$shop-gutter-width-sm: 5px;
+$shop-gutter-width:    15px;
+
+ul.products {
+  @include make-row();
+
+  margin-right: -$shop-gutter-width-sm;
+  margin-left: -$shop-gutter-width-sm;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  clear: both;
+
+  @include media-breakpoint-up(sm) {
+    margin-right: -$shop-gutter-width;
+    margin-left: -$shop-gutter-width;
+  }
+
+  li {
+    @include make-col-ready();
+    @include make-col(6);
+
+    padding-right: $shop-gutter-width-sm;
+    padding-left: $shop-gutter-width-sm;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    @include media-breakpoint-up(sm) {
+      padding-right: $shop-gutter-width;
+      padding-left: $shop-gutter-width;
+    }
+  }
+
+  a.woocommerce-LoopProduct-link {
+    text-decoration: none;
+    flex: 1 1 auto;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    margin-bottom: 0.125rem;
+  }
+
+  .star-rating {
+    margin: 0 auto 0.125rem;
+  }
+
+  .price {
+    color: $body-color;
+    font-size: 0.85em;
+    margin-bottom: 0.75rem;
+    display: block;
+
+    del {
+      opacity: 0.5;
+    }
+  }
+
+  /* Button
+  -------------------------------------------------- */
+  .button {
+    @extend .btn-sm;
+
+    transition: opacity 0.2s;
+
+    &.loading {
+      opacity: 0.3;
+
+      &::after {
+        font-family: "WooCommerce", sans-serif;
+        content: "\e01c";
+        vertical-align: bottom;
+        margin-left: 0.53em;
+        animation: spin 2s linear infinite;
+      }
+    }
+
+    &.added::after {
+      font-family: "WooCommerce", sans-serif;
+      content: "\e017";
+      margin-left: 0.53em;
+      vertical-align: bottom;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  /* Added to cart badge
+  -------------------------------------------------- */
+  .added_to_cart {
+    @extend .badge;
+    @extend .badge-info;
+    @extend .shadow-sm;
+
+    animation: moveup 0.2s ease-in-out forwards;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    @keyframes moveup {
+      from { bottom: -20px; }
+      to { bottom: -15px; }
+    }
+  }
+
+  /* Layout
+  -------------------------------------------------- */
+  @include media-breakpoint-up(md) {
+    &.columns-2 li.product {
+      @include make-col(6);
+    }
+
+    &.columns-3 li.product {
+      @include make-col(4);
+    }
+
+    &.columns-4 li.product {
+      @include make-col(3);
+    }
+
+    &.columns-5 li.product {
+      @include make-col(2, 10);
+    }
+
+    &.columns-6 li.product {
+      @include make-col(2);
+    }
+  }
+}

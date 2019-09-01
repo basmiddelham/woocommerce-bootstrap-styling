@@ -1,0 +1,90 @@
+/* Notices
+--------------------------------------------------- */
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  @extend .alert;
+
+  list-style: none;
+  padding-left: 3.5rem;
+
+  a:not(.button) {
+    @extend .alert-link;
+  }
+
+  .button {
+    @extend .btn-sm;
+
+    float: right;
+  }
+
+  &::before {
+    font-family: "WooCommerce", sans-serif;
+    display: inline-block;
+    position: absolute;
+    top: 0.75rem;
+    left: 1.5rem;
+  }
+}
+
+/* Message */
+.woocommerce-message {
+  @extend .alert-primary;
+
+  a.button {
+    @extend .btn-primary;
+  }
+
+  &::before {
+    content: "\e015";
+  }
+}
+
+/* Error */
+.woocommerce-error {
+  @extend .alert-warning;
+
+  .button {
+    @extend .btn-warning;
+  }
+
+  &::before {
+    content: "\e016";
+  }
+}
+
+/* Info */
+.woocommerce-info {
+  @extend .alert-info;
+
+  .button {
+    @extend .btn-info;
+  }
+
+  &::before {
+    content: "\e016";
+  }
+}
+
+/* General Store Notice
+--------------------------------------------------- */
+.woocommerce-store-notice {
+  @extend .alert;
+  @extend .alert-primary;
+
+  border-radius: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  z-index: 9998;
+}
+
+.woocommerce-store-notice__dismiss-link {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-sm;
+
+  float: right;
+}

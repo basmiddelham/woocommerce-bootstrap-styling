@@ -1,0 +1,18 @@
+/* Product Archive
+-------------------------------------------------- */
+.woocommerce-result-count {
+  float: left;
+  line-height: $input-height-sm;
+  font-size: $font-size-sm;
+  margin-right: 1em;
+  margin-bottom: 1.5rem;
+}
+
+.woocommerce-ordering {
+  float: right;
+  margin-bottom: 1.5rem;
+
+  select {
+    @extend .form-control-sm;
+  }
+}

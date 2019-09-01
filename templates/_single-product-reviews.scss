@@ -1,0 +1,135 @@
+/* Reviews
+-------------------------------------------------------------- */
+#comments {
+  margin-bottom: 1.5rem;
+
+  ol.commentlist {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .comment_container {
+    @extend .alert;
+    @extend .alert-light;
+    @extend .clearfix;
+  }
+
+  .comment-text {
+    @include media-breakpoint-up(md) {
+      width: 92.5%;
+      float: right;
+    }
+  }
+
+  .avatar {
+    float: left;
+    border-radius: 3px;
+    width: 32px;
+    margin-right: 0.5rem;
+
+    @include media-breakpoint-up(md) {
+      width: 5%;
+      margin-right: 2.5%;
+    }
+  }
+
+  .star-rating {
+    float: right;
+  }
+
+  p.meta {
+    line-height: $line-height-sm;
+    margin-bottom: 0.5rem;
+
+    .woocommerce-review__dash {
+      display: none;
+    }
+
+    .woocommerce-review__published-date {
+      display: block;
+      color: $gray-500;
+      font-size: $font-size-sm;
+    }
+
+    .verified {
+      display: inline-block;
+      position: relative;
+      text-indent: -9999px;
+
+      &::before {
+        font-family: "WooCommerce", sans-serif;
+        font-size: 0.85rem;
+        color: $primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "\E015";
+        text-indent: 0;
+        font-style: normal;
+      }
+    }
+  }
+
+  .description > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.comment-form-cookies-consent {
+  @extend .custom-control;
+  @extend .custom-checkbox;
+
+  input[type="checkbox"] {
+    @extend .custom-control-input;
+  }
+
+  label {
+    @extend .custom-control-label;
+  }
+}
+
+#respond {
+  textarea,
+  input[type="email"],
+  input[type="text"] {
+    @extend .form-control;
+  }
+
+  input[type="submit"] {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  textarea {
+    height: 7.5em;
+  }
+
+  label {
+    color: $gray-600;
+  }
+
+  .comment-reply-title {
+    display: none;
+  }
+
+  .comment-form {
+    p {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      .comment-form-author {
+        width: 49%;
+        float: left;
+        clear: both;
+      }
+
+      .comment-form-email {
+        width: 49%;
+        float: right;
+      }
+    }
+  }
+}
