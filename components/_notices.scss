@@ -4,6 +4,7 @@
 .woocommerce-info,
 .woocommerce-error {
   @extend .alert;
+  @extend .clearfix;
 
   list-style: none;
   padding-left: 3.5rem;

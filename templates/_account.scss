@@ -1,13 +1,11 @@
-/* Login
+/* Login & register forms
 -------------------------------------------------- */
 .woocommerce-account {
-  /* Login & register forms
-  -------------------------------------------------- */
   .woocommerce-form,
   .lost_reset_password {
     max-width: 380px;
     padding: 20px;
-    margin: 1rem 0 2rem;
+    margin: 1rem auto 2rem;
     background-color: white;
     border: $border-width solid $border-color;
     border-radius: $border-radius;
@@ -27,6 +25,14 @@
 
     > p:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  .lost_reset_password {
+    .form-row {
+      display: block;
+      width: 100%;
+      float: none;
     }
   }
 

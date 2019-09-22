@@ -4,10 +4,10 @@ body.woocommerce-cart {
   .woocommerce-cart-form {
     margin-bottom: 1rem;
 
-    @extend .table-responsive-sm;
+    @extend .table-responsive;
 
     @include media-breakpoint-up(md) {
-      width: 58%;
+      width: 60%;
       display: inline-block;
     }
   }
@@ -17,7 +17,7 @@ body.woocommerce-cart {
 
     @include media-breakpoint-up(md) {
       float: right;
-      width: 38%;
+      width: 36%;
       display: inline-block;
     }
   }
@@ -30,6 +30,8 @@ body.woocommerce-cart {
 /* Cart Table
 -------------------------------------------------------------- */
 .shop_table.cart {
+  @extend .table-sm;
+
   td {
     vertical-align: middle;
 
