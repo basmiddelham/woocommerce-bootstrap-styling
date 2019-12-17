@@ -20,6 +20,8 @@ body.woocommerce-cart {
     .cart_totals {
       @include make-col-ready();
       @include make-col(4);
+
+      margin-left: auto;
     }
   }
 }
