@@ -1,14 +1,14 @@
-# woocommerce-bootstrap-styling
-Replacement for Woocommerce CSS for use in your Bootstrap project.
+# Woocommerce Bootstrap styling
+Replacement for WooCommerce CSS for use in your Bootstrap project.
 
 Check out the [demo](https://middelham.nl/sagestarter) of this project.
 
-Use:
+Add this this your `functions.php`to disable default stylesheets and add WooCommerce support:
 
 ```
 if (class_exists('woocommerce')) {
 
-  // Disable the default WooCommerce stylesheet.
+  // Disable the default WooCommerce stylesheets.
   add_filter('woocommerce_enqueue_styles', '__return_empty_array');
   
   // Add Woocommerce support and enable Woocoommerce gallery.
@@ -20,3 +20,24 @@ if (class_exists('woocommerce')) {
   });
 }
 ```
+
+## Header cart
+To use the ajax powered mini-cart in your header add [this](https://github.com/MoshCat/woocommerce-header-cart/blob/master/woocommerce-header-cart.php) to your theme. 
+
+## Change breadcrumb to Bootstrap defaults
+Use this filter to change the WooCommerce breadcrumb to use Bootstrap classes.
+```
+/**
+ * Change breadcrumb to Bootstrap defaults
+ */
+add_filter('woocommerce_breadcrumb_defaults', function () {
+    return array(
+        'delimiter'   => '',
+        'wrap_before' => '<nav class="woocommerce-breadcrumb" aria-label="breadcrumb"><ol class="breadcrumb">',
+        'wrap_after'  => '</ol></nav>',
+        'before'      => '<li class="breadcrumb-item">',
+        'after'       => '</li>',
+        'home'        => __('Home', 'breadcrumb', 'sage'),
+    );
+});
+````
