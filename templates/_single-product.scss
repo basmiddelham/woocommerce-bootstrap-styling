@@ -11,7 +11,6 @@ body.single-product {
     margin-bottom: 2rem;
 
     @include make-col-ready();
-    @include make-col(12);
 
     @include media-breakpoint-up(md) {
       @include make-col(6);
@@ -22,7 +21,6 @@ body.single-product {
     margin-bottom: 2rem;
 
     @include make-col-ready();
-    @include make-col(12);
 
     @include media-breakpoint-up(md) {
       @include make-col(6);
@@ -35,7 +33,6 @@ body.single-product {
     margin-bottom: 2rem;
 
     @include make-col-ready();
-    @include make-col(12);
   }
 
   .onsale {

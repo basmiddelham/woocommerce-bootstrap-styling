@@ -74,34 +74,6 @@
   }
 }
 
-/* Layered Nav Filters
--------------------------------------------------------------- */
-.widget_layered_nav {
-  li.chosen {
-    font-weight: $font-weight-bold;
-  }
-}
-
-.widget_layered_nav_filters {
-  li.chosen {
-    display: inline-block;
-    margin-right: 0.5rem;
-
-    a {
-      @extend .badge;
-      @extend .badge-pill;
-      @extend .badge-primary;
-
-      font-size: 0.75em;
-
-      &::before {
-        content: "\00d7";
-        margin-right: 0.25rem;
-      }
-    }
-  }
-}
-
 /* Rating filter
 -------------------------------------------------------------- */
 .widget_rating_filter {

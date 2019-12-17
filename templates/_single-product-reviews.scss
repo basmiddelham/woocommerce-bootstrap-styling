@@ -75,19 +75,6 @@
   }
 }
 
-.comment-form-cookies-consent {
-  @extend .custom-control;
-  @extend .custom-checkbox;
-
-  input[type="checkbox"] {
-    @extend .custom-control-input;
-  }
-
-  label {
-    @extend .custom-control-label;
-  }
-}
-
 #respond {
   textarea,
   input[type="email"],

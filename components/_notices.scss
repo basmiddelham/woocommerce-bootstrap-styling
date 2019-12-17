@@ -69,11 +69,10 @@
 
 /* General Store Notice
 --------------------------------------------------- */
-.woocommerce-store-notice {
-  @extend .alert;
-  @extend .alert-primary;
-
-  border-radius: 0;
+p.woocommerce-store-notice {
+  background-color: $light;
+  border: 1px solid $border-color;
+  padding: 1em;
   position: fixed;
   left: 0;
   bottom: 0;
