@@ -22,7 +22,10 @@ if (class_exists('woocommerce')) {
 ```
 
 ## Header cart
-To use the ajax powered mini-cart in your header add [this](https://github.com/MoshCat/woocommerce-header-cart/blob/master/woocommerce-header-cart.php) to your theme. 
+To use the ajax powered mini-cart in your header add [this](https://github.com/MoshCat/woocommerce-header-cart/blob/master/woocommerce-header-cart.php) to your theme.
+
+## Widgets
+To use the WooCoomerce widgets you would also needs this basic [WordPress widget styling](https://gist.github.com/MoshCat/d2822941189762d0a03718cc192b0925).
 
 ## Change breadcrumb to Bootstrap defaults
 Use this filter to change the WooCommerce breadcrumb to use Bootstrap classes.
