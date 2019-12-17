@@ -1,11 +1,6 @@
 /* Columns
 -------------------------------------------------- */
 .woocommerce {
-  h2 {
-    font-size: 1.125rem;
-    margin-bottom: 1rem;
-  }
-
   .col2-set {
     @include make-row();
 
@@ -41,6 +36,10 @@
     }
   }
 
+  .clear {
+    @extend .clearfix;
+  }
+
   /* Butttons
   -------------------------------------------------- */
   .button {
@@ -49,6 +48,25 @@
 
     &.alt {
       @extend .btn-primary;
+    }
+  }
+
+  /* Pagination
+  -------------------------------------------------- */
+  .woocommerce-pagination {
+    margin: 0 auto;
+    display: table;
+
+    ul.page-numbers {
+      @extend .pagination;
+
+      li {
+        @extend .page-item;
+
+        > * {
+          @extend .page-link;
+        }
+      }
     }
   }
 

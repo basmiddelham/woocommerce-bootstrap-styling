@@ -61,13 +61,7 @@ form.woocommerce-checkout {
       padding-bottom: 0.325rem;
     }
 
-    input[type="radio"] {
-      @extend .custom-control-input;
-    }
-
     label {
-      @extend .custom-control-label;
-
       display: block;
       cursor: pointer;
     }
