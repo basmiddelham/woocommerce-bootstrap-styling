@@ -1,7 +1,7 @@
 # Woocommerce Bootstrap styling
 Replacement for WooCommerce CSS for use in your Bootstrap project.
 
-Check out the [demo](https://middelham.nl/sagestarter/shop) of this project.
+Check out the [demo](https://sagestarter.middelham.nl/shop) of this project.
 
 Add this this your `functions.php`to disable default stylesheets and add WooCommerce support:
 
