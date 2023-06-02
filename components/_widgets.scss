@@ -1,6 +1,11 @@
 /* Product categories
 -------------------------------------------------------------- */
 .widget_product_categories {
+  ul.product-categories {
+    padding: 0;
+    list-style: none;
+  }
+
   .children {
     padding-left: 0.75rem;
   }
@@ -34,6 +39,8 @@
   }
 
   .button {
+    @extend .btn;
+    @extend .btn-outline-primary;
     @extend .btn-sm;
 
     margin-right: 0.25rem;
@@ -47,6 +54,9 @@
 /* Product lists
 -------------------------------------------------------------- */
 .product_list_widget {
+  padding: 0;
+  list-style: none;
+
   li {
     clear: both;
     padding: 0.25rem 0;
@@ -69,7 +79,8 @@
     img {
       float: right;
       margin: 0 0 0.5rem 0.5rem;
-      max-width: 48px;
+      width: 48px;
+      height: auto;
     }
   }
 }
@@ -103,12 +114,15 @@
     line-height: 2.4em;
 
     .button {
+      @extend .btn;
+      @extend .btn-secondary;
       @extend .btn-sm;
 
       float: left;
     }
   }
 
+  /* stylelint-disable-next-line media-feature-range-notation */
   @media (min-width: 768px) and (max-width: 1024px) {
     .price_slider_amount {
       text-align: left;
@@ -163,7 +177,7 @@
 
   .price_slider_wrapper .ui-widget-content {
     border-radius: 1em;
-    background: rgba(0, 0, 0, 0.1);
+    background: #0000001a;
     border: 0;
   }
 

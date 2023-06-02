@@ -1,3 +1,5 @@
+/* stylelint-disable selector-id-pattern */
+
 /* Layout
 -------------------------------------------------- */
 form.woocommerce-checkout {
@@ -96,7 +98,6 @@ form.woocommerce-checkout {
 
   .button {
     @extend .btn-lg;
-    @extend .btn-block;
   }
 }
 

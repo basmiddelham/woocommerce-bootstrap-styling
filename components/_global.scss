@@ -2,11 +2,11 @@
 -------------------------------------------------- */
 .woocommerce {
   .col2-set {
-    @include make-row();
+    @include make-row;
 
     .col-1,
     .col-2 {
-      @include make-col-ready();
+      @include make-col-ready;
       @include make-col(12);
 
       @include media-breakpoint-up(md) {
@@ -104,13 +104,17 @@
 
   /* On Sale badge
   -------------------------------------------------- */
-  .onsale {
-    @extend .badge;
-    @extend .badge-primary;
+  .woocommerce-LoopProduct-link {
+    position: relative;
 
-    position: absolute;
-    right: 15px;
-    top: -5px;
+    .onsale {
+      @extend .badge;
+      @extend .bg-primary;
+
+      position: absolute;
+      right: .5rem;
+      top: .5rem;
+    }
   }
 
   /* Remove icon

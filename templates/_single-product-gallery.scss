@@ -7,7 +7,7 @@
     height: auto;
   }
 
-  .woocommerce-product-gallery__image:nth-child(n+2) {
+  .woocommerce-product-gallery__image:nth-child(n + 2) {
     width: 25%;
     display: inline-block;
   }
@@ -40,7 +40,7 @@
   .woocommerce-product-gallery__trigger {
     position: absolute;
     top: 8px;
-    right: $grid-gutter-width / 2 + 8px;
+    right: $grid-gutter-width;
     font-size: 2em;
     z-index: 9;
     width: 36px;
