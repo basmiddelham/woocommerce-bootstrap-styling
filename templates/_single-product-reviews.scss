@@ -82,11 +82,6 @@
     @extend .form-control;
   }
 
-  input[type="submit"] {
-    @extend .btn;
-    @extend .btn-primary;
-  }
-
   textarea {
     height: 7.5em;
   }

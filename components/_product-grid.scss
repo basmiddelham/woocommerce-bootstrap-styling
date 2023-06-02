@@ -58,8 +58,6 @@ ul.products {
   /* Button
   -------------------------------------------------- */
   .button {
-    @extend .btn;
-    @extend .btn-primary;
     @extend .btn-sm;
 
     transition: opacity 0.2s;

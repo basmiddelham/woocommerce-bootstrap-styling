@@ -39,15 +39,9 @@
   }
 
   .button {
-    @extend .btn;
-    @extend .btn-outline-primary;
     @extend .btn-sm;
 
     margin-right: 0.25rem;
-
-    &.checkout {
-      @extend .btn-primary;
-    }
   }
 }
 
@@ -114,8 +108,6 @@
     line-height: 2.4em;
 
     .button {
-      @extend .btn;
-      @extend .btn-secondary;
       @extend .btn-sm;
 
       float: left;

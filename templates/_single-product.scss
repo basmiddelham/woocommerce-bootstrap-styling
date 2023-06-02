@@ -57,11 +57,6 @@ body.single-product {
       margin-right: 0.25rem;
     }
 
-    button {
-      @extend .btn;
-      @extend .btn-primary;
-    }
-
     table {
       @extend .table;
       @extend .table-sm;

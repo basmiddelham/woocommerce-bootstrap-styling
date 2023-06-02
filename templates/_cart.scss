@@ -90,7 +90,7 @@ body.woocommerce-cart {
   }
 
   .button.checkout-button {
-    @extend .btn-lg;
+    width: 100%;
   }
 }
 

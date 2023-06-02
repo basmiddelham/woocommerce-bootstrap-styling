@@ -43,12 +43,12 @@
   /* Butttons
   -------------------------------------------------- */
   .button {
-    // @extend .btn;
-    // @extend .btn-primary;
+    @extend .btn;
+    @extend .btn-secondary;
 
-    // &.alt {
-    //   @extend .btn-secondary;
-    // }
+    &.alt {
+      @extend .btn-primary;
+    }
   }
 
   /* Pagination
@@ -75,17 +75,15 @@
   .shop_table {
     @extend .table;
 
-    line-height: 1.4;
+    // th {
+    //   background-color: $gray-100;
+    //   font-weight: $font-weight-bold;
+    // }
 
-    th {
-      background-color: $gray-100;
-      font-weight: $font-weight-bold;
-    }
-
-    thead th {
-      border-top: none;
-      border-bottom: none;
-    }
+    // thead th {
+    //   border-top: none;
+    //   border-bottom: none;
+    // }
 
     ul {
       padding-left: 0;
@@ -93,9 +91,9 @@
       list-style: none;
     }
 
-    p {
-      margin-bottom: 0.5rem;
-    }
+    // p {
+    //   margin-bottom: 0.5rem;
+    // }
 
     .button {
       @extend .btn-sm;
@@ -117,7 +115,7 @@
   -------------------------------------------------- */
   a.remove {
     display: inline-block;
-    font-size: 1.25em;
+    font-size: 1em;
     height: 0.75em;
     width: 0.75em;
     text-align: center;
