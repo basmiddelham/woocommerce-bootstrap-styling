@@ -43,12 +43,12 @@
   /* Butttons
   -------------------------------------------------- */
   .button {
-    @extend .btn;
-    @extend .btn-secondary;
+    // @extend .btn;
+    // @extend .btn-primary;
 
-    &.alt {
-      @extend .btn-primary;
-    }
+    // &.alt {
+    //   @extend .btn-secondary;
+    // }
   }
 
   /* Pagination
@@ -104,17 +104,13 @@
 
   /* On Sale badge
   -------------------------------------------------- */
-  .woocommerce-LoopProduct-link {
-    position: relative;
+  .onsale {
+    @extend .badge;
+    @extend .bg-primary;
 
-    .onsale {
-      @extend .badge;
-      @extend .bg-primary;
-
-      position: absolute;
-      right: .5rem;
-      top: .5rem;
-    }
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
   }
 
   /* Remove icon

@@ -3,11 +3,12 @@
 body.single-product {
   main > .product {
     @include make-row;
+
+    position: relative;
   }
 
   .woocommerce-product-gallery {
     margin-bottom: 2rem;
-    position: relative;
 
     @include make-col-ready;
 
@@ -36,7 +37,7 @@ body.single-product {
 
   .onsale {
     right: auto;
-    left: $grid-gutter-width / 2;
+    left: 1.5rem;
     z-index: 1;
   }
 
@@ -56,6 +57,11 @@ body.single-product {
       margin-right: 0.25rem;
     }
 
+    button {
+      @extend .btn;
+      @extend .btn-primary;
+    }
+
     table {
       @extend .table;
       @extend .table-sm;
@@ -63,7 +69,8 @@ body.single-product {
     }
 
     select {
-      @extend .form-control-sm;
+      @extend .form-select;
+      @extend .form-select-sm;
 
       width: auto;
       float: left;
