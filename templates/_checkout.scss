@@ -14,6 +14,12 @@
   }
 }
 
+#customer_details {
+  select {
+    @extend .form-select;
+  }
+}
+
 /* Payment
 -------------------------------------------------- */
 .woocommerce-checkout-payment {
@@ -61,6 +67,8 @@
 
   .button {
     @extend .btn-lg;
+
+    width: 100%;
   }
 }
 
