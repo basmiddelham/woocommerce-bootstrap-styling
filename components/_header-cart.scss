@@ -1,17 +1,41 @@
 /* Header cart
 -------------------------------------------------- */
 .site-header-cart {
+  // Hide when cart is empty
+  &:has(p.woocommerce-mini-cart__empty-message) {
+    display: none;
+  }
+
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
 
-  .svg-icon {
-    color: $secondary;
-  }
+  a.cart-contents {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  .count {
-    color: $gray-600;
-    font-size: 0.75em;
+    .svg-icon {
+      color: $secondary;
+    }
+  
+    .count {
+      display: inline-block;
+      background-color: $danger;
+      border-radius: 50rem;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.25rem;
+      font-size: 0.563rem;
+      color: white;
+      padding: 1px 4px;
+      line-height: 1;
+    }
   }
 
   .widget_shopping_cart {
