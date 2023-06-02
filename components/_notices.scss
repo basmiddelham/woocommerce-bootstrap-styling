@@ -23,7 +23,7 @@
     font-family: WooCommerce, sans-serif;
     display: inline-block;
     position: absolute;
-    top: 0.75rem;
+    top: var(--bs-alert-padding-y);
     left: 1.5rem;
   }
 }

@@ -22,9 +22,6 @@
     padding: 0;
 
     li {
-      // @extend .custom-control;
-      // @extend .custom-radio;
-
       padding-top: 0.325rem;
       padding-bottom: 0.325rem;
     }
@@ -68,18 +65,6 @@
 }
 
 .woocommerce-checkout {
-  /* 'Shipping address' and 'Create account' labels
-  -------------------------------------------------- */
-  // .create-account,
-  // #ship-to-different-address {
-  //   margin-bottom: 1.25rem;
-
-  //   label {
-  //     font-weight: $font-weight-normal !important;
-  //     font-size: 1rem;
-  //   }
-  // }
-
   /* Coupons
   -------------------------------------------------- */
   .checkout_coupon {

@@ -75,25 +75,11 @@
   .shop_table {
     @extend .table;
 
-    // th {
-    //   background-color: $gray-100;
-    //   font-weight: $font-weight-bold;
-    // }
-
-    // thead th {
-    //   border-top: none;
-    //   border-bottom: none;
-    // }
-
     ul {
       padding-left: 0;
       margin-bottom: 0;
       list-style: none;
     }
-
-    // p {
-    //   margin-bottom: 0.5rem;
-    // }
 
     .button {
       @extend .btn-sm;
