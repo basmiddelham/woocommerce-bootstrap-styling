@@ -1,39 +1,5 @@
 /* stylelint-disable selector-id-pattern */
 
-/* Layout
--------------------------------------------------- */
-form.woocommerce-checkout {
-  @extend .clearfix;
-
-  @include media-breakpoint-up(md) {
-    .col2-set {
-      display: block;
-      width: 58%;
-      float: left;
-      margin-right: 4%;
-      margin-left: 0;
-    }
-
-    .col-1,
-    .col-2 {
-      padding-right: 0 !important;
-      padding-left: 0 !important;
-      max-width: none !important;
-      flex: unset !important;
-    }
-
-    #order_review_heading {
-      width: 38%;
-      float: left;
-    }
-
-    .woocommerce-checkout-review-order {
-      width: 38%;
-      float: left;
-    }
-  }
-}
-
 /* Review order
 -------------------------------------------------- */
 .woocommerce-checkout-review-order .shop_table {
@@ -56,8 +22,8 @@ form.woocommerce-checkout {
     padding: 0;
 
     li {
-      @extend .custom-control;
-      @extend .custom-radio;
+      // @extend .custom-control;
+      // @extend .custom-radio;
 
       padding-top: 0.325rem;
       padding-bottom: 0.325rem;
@@ -104,15 +70,15 @@ form.woocommerce-checkout {
 .woocommerce-checkout {
   /* 'Shipping address' and 'Create account' labels
   -------------------------------------------------- */
-  .create-account,
-  #ship-to-different-address {
-    margin-bottom: 1.25rem;
+  // .create-account,
+  // #ship-to-different-address {
+  //   margin-bottom: 1.25rem;
 
-    label {
-      font-weight: $font-weight-normal !important;
-      font-size: 1rem;
-    }
-  }
+  //   label {
+  //     font-weight: $font-weight-normal !important;
+  //     font-size: 1rem;
+  //   }
+  // }
 
   /* Coupons
   -------------------------------------------------- */

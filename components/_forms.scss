@@ -1,16 +1,8 @@
+/* stylelint-disable selector-id-pattern */
+
 /* Inputs
 -------------------------------------------------- */
 .woocommerce {
-  // Add custom controls to all checkboxes and radio inputs
-  input[type="checkbox"],
-  input[type="radio"] {
-    @extend .custom-control-input;
-
-    + label {
-      @extend .custom-control-label;
-    }
-  }
-
   // Style labels
   .form-row > label:not(.woocommerce-form__label-for-checkbox) {
     color: $text-muted;
@@ -30,25 +22,6 @@
     width: 4.5em;
   }
 
-  // Style some checkboxes
-  .woocommerce-form__label {
-    @extend .custom-control;
-    @extend .custom-checkbox;
-
-    font-size: $font-size-sm;
-    line-height: $line-height-sm;
-    font-weight: $font-weight-normal;
-
-    span:not(.required) {
-      @extend .custom-control-label;
-
-      &::before,
-      &::after {
-        top: 2px;
-      }
-    }
-  }
-
   /* Form validation
   -------------------------------------------------- */
   form {
@@ -66,24 +39,11 @@
       border-bottom-color: $danger;
     }
   }
-
-  .woocommerce-validated {
-    label.checkbox {
-      font-weight: $font-weight-bold;
-    }
-
-    input {
-      border-bottom-color: $success;
-    }
-  }
 }
 
 /* Shipping methods form
 -------------------------------------------------- */
 ul#shipping_method li {
-  @extend .custom-control;
-  @extend .custom-radio;
-
   label {
     &::before,
     &::after {

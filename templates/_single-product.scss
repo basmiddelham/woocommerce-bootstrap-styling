@@ -9,6 +9,7 @@ body.single-product {
 
   .woocommerce-product-gallery {
     margin-bottom: 2rem;
+    position: relative;
 
     @include make-col-ready;
 
