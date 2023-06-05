@@ -1,9 +1,13 @@
+/* stylelint-disable selector-class-pattern */
+
 /* Header cart
 -------------------------------------------------- */
 .site-header-cart {
   // Hide when cart is empty
-  &:has(p.woocommerce-mini-cart__empty-message) {
-    display: none;
+  display: none;
+
+  &:has(p.woocommerce-mini-cart__total) {
+    display: block;
   }
 
   list-style: none;
@@ -13,30 +17,25 @@
 
   a.cart-contents {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    padding: $navbar-padding-y $navbar-padding-x;
 
     .svg-icon {
       color: var(--bs-nav-link-color);
     }
   
     .count {
-      display: inline-block;
-      margin: 0 0.25rem;
       background-color: $danger;
       border-radius: 50rem;
       position: absolute;
-      top: 0.325rem;
-      right: 0.125rem;
       font-size: 10px;
       color: $white;
       height: 13px;
       text-align: center;
-      padding: 0 3px;
       line-height: 14px;
       min-width: 14px;
+      right: 1px;
+      padding: 0 3px;
     }
   }
 

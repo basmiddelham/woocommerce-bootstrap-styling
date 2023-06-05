@@ -12,14 +12,9 @@ body.woocommerce-cart {
       @include make-row;
     }
 
-    .cross-sells {
-      @include make-col-ready;
-      @include make-col(8);
-    }
-
     .cart_totals {
       @include make-col-ready;
-      @include make-col(4);
+      @include make-col(6);
 
       margin-left: auto;
     }
@@ -29,16 +24,6 @@ body.woocommerce-cart {
 /* Cart Table
 -------------------------------------------------------------- */
 .shop_table.cart {
-  @extend .table-sm;
-
-  td {
-    vertical-align: middle;
-
-    &.product-name {
-      min-width: 140px;
-    }
-  }
-
   // Thumbnail
   .product-thumbnail {
     img {
@@ -50,14 +35,8 @@ body.woocommerce-cart {
 
   // Actions
   .actions {
-    padding: 0.75rem 0;
-
     .coupon {
       float: left;
-
-      > label {
-        @extend .visually-hidden;
-      }
 
       input.input-text {
         @extend .form-control-sm;
@@ -82,11 +61,7 @@ body.woocommerce-cart {
   }
 
   .shop_table {
-    @extend .table-borderless;
-    @extend .table-sm;
-
     font-size: $font-size-sm;
-    line-height: $line-height-sm;
   }
 
   .button.checkout-button {

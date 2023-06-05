@@ -1,19 +1,4 @@
 /* stylelint-disable selector-id-pattern */
-
-/* Review order
--------------------------------------------------- */
-.woocommerce-checkout-review-order .shop_table {
-  @extend .table-sm;
-  @extend .table-borderless;
-
-  font-size: $font-size-sm;
-  line-height: $line-height-sm;
-
-  label {
-    margin-bottom: 0;
-  }
-}
-
 #customer_details {
   select {
     @extend .form-select;

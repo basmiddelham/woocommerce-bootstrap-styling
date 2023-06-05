@@ -5,6 +5,10 @@
     padding: 0;
     list-style: none;
   }
+
+  .children {
+    padding-left: 0.75rem;
+  }
 }
 
 /* Mini cart
@@ -49,7 +53,8 @@
 
   li {
     clear: both;
-    margin-bottom: 0.125rem;
+    padding: 0.25rem 0;
+    margin-bottom: 0.5rem;
 
     a:not(.remove) {
       display: block;
@@ -67,7 +72,7 @@
 
     img {
       float: right;
-      margin: 0 0 0.125rem 0.125rem;
+      margin: 0 0 0.5rem 0.5rem;
       width: 48px;
       height: auto;
     }

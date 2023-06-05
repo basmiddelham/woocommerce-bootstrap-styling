@@ -3,6 +3,7 @@
 ul.products {
   @include make-row;
 
+  position: relative;
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
@@ -30,8 +31,8 @@ ul.products {
 
     .onsale {
       position: absolute;
-      right: .5rem;
-      top: .5rem;
+      top: 1rem;
+      left: 1rem;
     }
   }
 
@@ -105,14 +106,10 @@ ul.products {
     @extend .btn-sm;
     @extend .shadow-sm;
 
-    padding-top: 0;
-    padding-bottom: 0;
-    animation: moveup 0.2s ease-in-out forwards;
-    transform: translateX(-50%);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-
+    margin-top: -0.25rem;
+    font-size: 0.75rem;
+    display: block;
+    
     @keyframes moveup {
       from {
         bottom: -20px;

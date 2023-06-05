@@ -19,7 +19,7 @@
     display: block;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     width: 100%;
 
     @include media-breakpoint-up(sm) {
@@ -44,10 +44,10 @@
   -------------------------------------------------- */
   .button {
     @extend .btn;
-    @extend .btn-secondary;
+    @extend .btn-primary;
 
     &.alt {
-      @extend .btn-primary;
+      @extend .btn-secondary;
     }
   }
 
@@ -75,6 +75,10 @@
   .shop_table {
     @extend .table;
 
+    td {
+      vertical-align: middle;
+    }
+
     ul {
       padding-left: 0;
       margin-bottom: 0;
@@ -98,11 +102,11 @@
   -------------------------------------------------- */
   a.remove {
     display: inline-block;
-    font-size: 1em;
-    height: 0.75em;
-    width: 0.75em;
+    font-size: 0.9375em;
+    height: 0.9375em;
+    width: 0.9375em;
     text-align: center;
-    line-height: 0.75;
+    line-height: 0.9375em;
     border-radius: 100%;
     color: $red;
     text-decoration: none;
