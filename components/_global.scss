@@ -90,11 +90,8 @@
   -------------------------------------------------- */
   .onsale {
     @extend .badge;
-    @extend .bg-primary;
-
-    position: absolute;
-    right: .5rem;
-    top: .5rem;
+    @extend .bg-secondary;
+    @extend .shadow-sm;
   }
 
   /* Remove icon

@@ -22,13 +22,22 @@ ul.products {
   }
 
   a.woocommerce-LoopProduct-link {
+    position: relative;
     text-decoration: none;
     flex: 1 1 auto;
     height: 100%;
     width: 100%;
+
+    .onsale {
+      position: absolute;
+      right: .5rem;
+      top: .5rem;
+    }
   }
 
   img {
+    @extend .shadow-sm;
+
     width: 100%;
     height: auto;
     display: block;
@@ -123,11 +132,19 @@ ul.products {
     }
 
     &.columns-3 li.product {
-      @include make-col(4);
+      @include media-breakpoint-up(lg) {
+        @include make-col(4);
+      }
     }
 
     &.columns-4 li.product {
-      @include make-col(3);
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+      }
+
+      @include media-breakpoint-up(lg) {
+        @include make-col(3);
+      }
     }
 
     &.columns-5 li.product {
