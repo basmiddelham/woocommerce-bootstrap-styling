@@ -7,7 +7,8 @@
   }
 
   .children {
-    padding-left: 0.75rem;
+    padding-left: 1rem;
+    list-style: none;
   }
 }
 
@@ -53,8 +54,6 @@
 
   li {
     clear: both;
-    padding: 0.25rem 0;
-    margin-bottom: 0.5rem;
 
     a:not(.remove) {
       display: block;
